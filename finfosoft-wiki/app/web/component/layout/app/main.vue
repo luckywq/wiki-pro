@@ -26,7 +26,7 @@
     },
     methods: {
       signout: function () {
-        this.islogin = false
+        this.islogin = false;
       }
     }
   }

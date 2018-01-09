@@ -5,7 +5,7 @@ exports.vuessr = {
   package: 'egg-view-vue-ssr'
 };
 
-exports.mongo = {
+exports.mongoose = {
   enable: true,
-  package: 'egg-mongo-native',
+  package: 'egg-mongoose',
 };

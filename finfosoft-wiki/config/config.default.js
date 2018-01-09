@@ -26,13 +26,9 @@ module.exports = app => {
         'ic')
   };
 
-  exports.mongo = {
-    client: {
-      host: '121.42.253.149',
-      port: '19908',
-      name: 'wiki',
-      user: 'wiki_user',
-      password: 'finfosoft123'
+  exports.mongoose = {
+    url: 'mongodb://wiki_user:finfosoft123@121.42.253.149:19908/wiki',
+    options: {
     }
   };
 

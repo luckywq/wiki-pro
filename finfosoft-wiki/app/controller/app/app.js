@@ -3,7 +3,7 @@ const Controller = require('egg').Controller;
 class AppController extends Controller {
   async index() {
     await this.ctx.render('app/app.js', {
-      url: this.ctx.url.replace(/\/finfosoft-wiki/, '')
+      url: this.ctx.url.replace(/\/app/, '')
     });
   }
 
@@ -16,6 +16,10 @@ class AppController extends Controller {
   async detail() {
     const id = this.ctx.query.id;
     this.ctx.body = Model.getDetail(id);
+  }
+
+  async user() {
+
   }
 }
 
